@@ -1,0 +1,26 @@
+---
+title: "Vignette- GGVIS"
+author: "Simon Marks"
+date: "3/14/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning = FALSE}
+library(tidyverse)
+library(readxl)
+library(ggvis)
+```
+
+```{r}
+SFC <- read_excel("/Users/simonmarks/Desktop/Stat-331/SFCData_Pool.xlsx")
+      
+```
+
+
+##Introduction
+
+The ggvis package is useful for building interactive graphics for data visualization and exploration. Like ggplot2, ggvis is based on the grammar of graphics, which makes ggvis easy to learn. It extends on ggplot2 by using R to build HTML graphs. The package works seamlessly with the dpylr's data transformation capabilities and also incorporate's shiny's reactive programming model.
